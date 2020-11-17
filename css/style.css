@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.texto-meio a {
+    text-decoration: none;
+    color: white;
+}
+
+h3,
+h4,
+label,
+th {
+    color: #ffb900;
+}
+
+body {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.image-catalogo {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.div-texto-meio {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image-catalogo {
+    opacity: 0.8;
+}
+
+.container:hover .div-texto-meio {
+    opacity: 1;
+}
+
+.texto-meio {
+
+
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #ffb900 0%, #ffcc33 51%, #ffb900 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px #eee;
+
+}
+
+option {
+    color: #666;
+}
+
+footer {
+    background: #eee;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+    box-shadow: 0 0 10px #333;
+}
+
+footer h4 {
+    color: #333;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer p {
+    color: #333;
+}
+
+footer a:hover {
+    box-shadow: none;
+}
+
+footer .navbar-nav a {
+    color: #333;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #ffb900;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+.btn-custom-footer {
+    background-image: linear-gradient(to right, #ffb900 0%, #ffcc33 51%, #ffb900 100%);
+    color: #333;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: background 0.4s, 0.4s;
+    background-size: 200% auto;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-custom-footer:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    text-decoration: none;
+}
